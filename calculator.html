@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+
+<html lan="en">
+
+<head>
+
+    <link href="hello.css" rel="stylesheet">
+
+    <script src="hello.js"></script>
+
+    <py-script src="calculator.py"></py-script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <center>
+
+        <h1 style="text-align: center;">Hello and Welcome to My Calculator</h1>
+
+    </center>
+     
+ <!--Here are the modes of the calculator-->
+
+ <button class="btn btn-primary" onclick="second()"><b>2ND</b></button>
+    
+ <button style="background-color: black;" onclick="mode()"><b><p style="color: white;">MODE</p></b></button>
+ 
+ <button style="background-color: black;" onclick="backspace()"><b><p style="color: white;">BACKSPACE</p></b></button>
+
+ <br>
+
+ <br>
+
+ <button class="btn btn-success" onclick="alpha()"><b>ALPHA</b></button>
+
+  <button style="background-color: black;" onclick="formulasforeducation()"><b><p style="color: white;">FORMULAS</p></b></button>
+
+  <button style="background-color: black;" onclick="stat()"><b><p style="color: white;">STAT</p></b></button>
+
+  <br>
+
+  <br>
+
+  <button onclick="MATH()" style="background-color: black;"><b><p style="color: white">MATH</p></b></button>
+
+  <br>
+
+  <br>
+
+  <!--Here are the functions of the calculator-->
+
+  <textarea id="textarea" class="btn btn-warning" style="width: 100%"></textarea>
+
+  <br>
+
+  <br>
+
+  <button class="btn btn-warning" onclick="equal()"><b>ENTER or =</b></button>
+  
+  <button class="btn btn-warning" onclick="plus()"><b>+</b></button>
+  
+  <button class="btn btn-warning" onclick="minus()"><b>-</b></button>
+  
+  <button class="btn btn-warning" onclick="multiply()"><b>*</b></button>
+  
+  <button class="btn btn-warning" onclick="divide()"><b>/</b></button>
+  
+  <button class="btn btn-warning" onclick="modulus()"><b>%(remainder after division)</b></button>
+  
+  <button class="btn btn-warning" onclick="floordivision()"><b>//(flooring after division)</b></button>
+  
+  <button class="btn btn-warning" onclick="exponent()"><b>ˆ</b></button>
+  
+  <button class="btn btn-warning" onclick="log()"><b>LOG</b></button>
+
+  <button class="btn btn-warning" onclick="ln()"><b>LN</b></button>
+  
+  <button class="btn btn-warning" onclick="fx()"><b>f(x) = </b></button>
+  
+  <button class="btn btn-warning" onclick="limit()"><b>Limit f(x)</b></button>
+  
+  <button class="btn btn-warning" onclick="derivative()"><b>f'(x)</b></button>
+  
+  <button class="btn btn-warning" onclick="openclosedparentheses()"><b>(Something needs to be done so that there is input inside the parentheses not outside)</b></button>
+  
+  <button class="btn btn-warning" onclick="sin()"><b>SIN</b></button>
+
+  <button class="btn btn-warning" onclick="cos()"><b>COS</b></button>
+
+  <button class="btn btn-warning" onclick="tan()"><b>TAN</b></button>
+
+  <button class="btn btn-warning" onclick="csc()"><b>CSC</b></button>
+
+  <button class="btn btn-warning" onclick="sec()"><b>SEC</b></button>
+
+  <button class="btn btn-warning" onclick="cot()"><b>COT</b></button>
+
+  <button class="btn btn-warning" onclick="antiderivative()"><b>ANTIDERIVATIVE </b></button>
+
+  <button class="btn btn-warning" onclick="integral()"><b>INTEGRAL </b></button>
+
+  <!--Here are the numbers of the calculator-->
+  
+  <button onclick="zero()" style="background-color: cyan;">0</button>
+  
+  <button onclick="one()" style="background-color: cyan;">1</button>
+  
+  <button onclick="two()" style="background-color: cyan;">2</button>
+  
+  <button onclick="three()" style="background-color: cyan;">3</button>
+  
+  <button onclick="four()" style="background-color: cyan;">4</button>
+  
+  <button onclick="five()" style="background-color: cyan;">5</button>
+  
+  <button onclick="six()" style="background-color: cyan;">6</button>
+  
+  <button onclick="seven()" style="background-color: cyan;">7</button>
+  
+  <button onclick="eight()" style="background-color: cyan;">8</button>
+  
+  <button onclick="nine()" style="background-color: cyan;">9</button>
+  
+  <button onclick="point()" style="background-color: cyan;">.</button>
+  
+  <button onclick="negative()" style="background-color: cyan;">(-)</button>
+  
+  <br>
+  
+  <br>
+  
+  <br>
+  
+  <br>
+  
+  <br>
+  
+  <br>
+  
+  <br>
+
+     <center>
+     
+        <button class="btn btn-success" onclick="home()" style="background-color: cyan;">Home</button> 
+     
+    </center>
+    
+</body>
+
+</html>
